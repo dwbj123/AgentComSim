@@ -1,0 +1,4 @@
+message_id,task_id,kind,send_time_s,size_bytes,finish_time_s,received_bytes
+task-1-sense,1,sense,1.0,2048,1.01,2048
+task-1-tool,1,tool,1.0,1024,1.03,1024
+task-2-sense,2,sense,2.0,4096,-1.0,1024

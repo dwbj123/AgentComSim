@@ -1,0 +1,14 @@
+duration_s: 45
+warmup_s: 5
+runs: 5
+base_seed: 202600
+arrival_rates: [0.8, 1.4]
+policies: [fifo, static, tus]
+record_events: false
+network:
+  bandwidth_mbps: 25
+  base_delay_s: 0.004
+compute:
+  workers: 1
+workload:
+  minimum_quality: 0.85

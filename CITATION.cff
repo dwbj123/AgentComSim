@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software in research, please cite this release."
+title: "AgentComSim: Task-centric simulation for agent communication networks"
+type: software
+version: 0.1.0
+date-released: 2026-11-11
+license: MIT
+authors:
+  - name: "dwbj123"
+abstract: >-
+  A reproducible message-level simulator with task-centric scheduling,
+  PyTorch neural policies, a local research workbench, and a one-way
+  packet-level ns-3 bridge.

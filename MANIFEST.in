@@ -1,0 +1,7 @@
+include LICENSE README.md README.zh-CN.md CHANGELOG.md CONTRIBUTING.md CODE_OF_CONDUCT.md SECURITY.md CITATION.cff Makefile .pre-commit-config.yaml
+recursive-include configs *.yaml
+recursive-include docs *.md *.png
+recursive-include examples *.py
+recursive-include scripts *.sh
+recursive-include tests *.py *.csv *.json
+recursive-include .github *.yml

@@ -1,0 +1,39 @@
+# Reference message-level experiment from the AgentComSim paper.
+duration_s: 240
+warmup_s: 30
+runs: 30
+base_seed: 202600
+arrival_rates: [0.8, 1.2, 1.6]
+policies: [fifo, static, tus]
+record_events: false
+network:
+  bandwidth_mbps: 25
+  base_delay_s: 0.004
+compute:
+  workers: 1
+  sense_base_s: 0.075
+  sense_seconds_per_mb: 0.055
+  compressed_work_factor: 0.72
+workload:
+  video_fraction: 0.62
+  image_fraction: 0.25
+  video_median_mb: 0.72
+  video_lognormal_sigma: 0.38
+  image_median_mb: 0.24
+  image_lognormal_sigma: 0.35
+  deadline_min_s: 1.25
+  deadline_max_s: 1.85
+  minimum_quality: 0.85
+tus:
+  critical_weight: 0.9
+  urgency_weight: 1.25
+  density_weight: 0.35
+  control_bonus: 0.5
+  plan_bonus: 0.25
+  tool_bonus: 0.05
+  queue_threshold: 2
+  slack_threshold_s: 0.32
+  video_byte_retention: 0.38
+  image_byte_retention: 0.55
+  video_quality_factor: 0.93
+  image_quality_factor: 0.96
